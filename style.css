@@ -32,10 +32,15 @@ html, body {
 
 .item {
     padding: 5px;
-    float: left;
+    display: none;
     min-height: 185px;
     text-align: center;
     flex: 1 0 34%;
+    /* 1 is flex grow or how much larger you want it to be from the base (multiplying by 1 won't change it), 0 is the flex shrink (leave at 0), 34% is the flex basis  */
+}
+
+.item.active {
+    display: block;
 }
 
 img {
